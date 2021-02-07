@@ -32,12 +32,13 @@ public class MainActivity extends AppCompatActivity {
         Uri website = Uri.parse(url);
 
         Intent intent = new Intent(Intent.ACTION_VIEW, website);
+        startActivity(intent);
 
-        if(intent.resolveActivity(getPackageManager()) != null) {
+        /*if(intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         } else {
             Log.i("Implicit intents", "Can't handle this intent.");
-        }
+        }*/
     }
 
     public void openLocation(View view) {
@@ -45,12 +46,13 @@ public class MainActivity extends AppCompatActivity {
         Uri location = Uri.parse("geo:0,0?=" + loc);
 
         Intent intent = new Intent(Intent.ACTION_VIEW, location);
+        startActivity(intent);
 
-        if(intent.resolveActivity(getPackageManager()) != null) {
+/*        if(intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         } else {
             Log.i("Implicit intents", "Can't handle this intent.");
-        }
+        }*/
     }
 
     public void shareText(View view) {

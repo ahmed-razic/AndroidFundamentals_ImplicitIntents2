@@ -43,9 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void openLocation(View view) {
         String loc = mLocationEditText.getText().toString();
-        Uri location = Uri.parse("geo:0,0?=" + loc);
-
-        Intent intent = new Intent(Intent.ACTION_VIEW, location);
+        Uri addressUri = Uri.parse(getString(R.string.geo_loc) + loc);
+        Intent intent = new Intent(Intent.ACTION_VIEW, addressUri);
         startActivity(intent);
 
 /*        if(intent.resolveActivity(getPackageManager()) != null) {

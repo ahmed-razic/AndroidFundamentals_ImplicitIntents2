@@ -4,9 +4,11 @@
     <string name="edittext_uri">http://developer.android.com</string>
     <string name="button_uri">Open Website</string>
 
-    <string name="edittext_loc">Golden Gate Bridge</string>
+    <string name="edittext_loc">Medina</string>
     <string name="button_loc">Open Location</string>
 
     <string name="edittext_share">Share this text with friends</string>
     <string name="button_share">Share This Text</string>
+    <string name="geo">geo:0,0?=</string>
+    <string name="geo_loc">geo:0,0?q=</string>
 </resources>
